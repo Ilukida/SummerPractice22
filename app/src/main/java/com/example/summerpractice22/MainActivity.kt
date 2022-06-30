@@ -18,11 +18,11 @@ class MainActivity : AppCompatActivity() {
             val editTextWeight = findViewById<EditText>(R.id.et_weight)
             val editTextAge = findViewById<EditText>(R.id.et_age)
             val textViewResult = findViewById<TextView>(R.id.tv_result)
-            if (editTextName.error == null && editTextHeight.error == null && editTextWeight.error == null && editTextAge.error == null) {
+            if (editTextName.length() != 0 && editTextHeight != null && editTextWeight != null && editTextAge != null) {
                 val name: String = editTextName.text.toString()
-                val height: Int = editTextHeight?.text.toString().toInt()
-                val weight: Double = editTextWeight?.text.toString().toDouble()
-                val age: Int = editTextAge?.text.toString().toInt()
+                val height: Int = editTextHeight.text.toString().toInt()
+                val weight: Double = editTextWeight.text.toString().toDouble()
+                val age: Int = editTextAge.text.toString().toInt()
                 if (validate(name, height, weight, age)) {
                     textViewResult.text = "The data is entered incorrectly."
                 } else {
