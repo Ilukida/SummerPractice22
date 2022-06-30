@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
             val editTextWeight = findViewById<EditText>(R.id.et_weight)
             val editTextAge = findViewById<EditText>(R.id.et_age)
             val textViewResult = findViewById<TextView>(R.id.tv_result)
-            if (editTextName.length() != 0 && editTextHeight != null && editTextWeight != null && editTextAge != null) {
+            if (editTextName.length() != 0 && editTextHeight.length() != 0 && editTextWeight.length() != 0 && editTextAge.length() != 0) {
                 val name: String = editTextName.text.toString()
                 val height: Int = editTextHeight.text.toString().toInt()
                 val weight: Double = editTextWeight.text.toString().toDouble()
