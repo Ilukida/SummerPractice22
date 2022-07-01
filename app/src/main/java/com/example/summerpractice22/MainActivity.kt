@@ -1,5 +1,6 @@
 package com.example.summerpractice22
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -8,6 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,19 +26,20 @@ class MainActivity : AppCompatActivity() {
                 val weight: Double = editTextWeight.text.toString().toDouble()
                 val age: Int = editTextAge.text.toString().toInt()
                 if (validate(name, height, weight, age)) {
-                    textViewResult.text = "The data is entered incorrectly."
+                    textViewResult.text = resources.getString(R.string.the_data_is_entered_incorrectly)
                 } else {
                     textViewResult.text = count(name, height, weight, age)
                 }
             } else {
-                textViewResult.text = "Data can't be null"
+                textViewResult.text = resources.getString(R.string.data_cant_be_null)
             }
             textViewResult.visibility = View.VISIBLE
         }
     }
+
     private fun count(name:String, height : Int, weight : Double, age : Int) : String {
-        val result = (weight*10+height*6.25-age*5)*1.5
-        return "$name - $result kcal"
+        val result = (weight*10+height*6.25-age*5)*1.5+name.length
+        return "$result " + resources.getString(R.string.kcal)
     }
 
     private fun validate(name:String, height : Int, weight : Double, age : Int):Boolean {

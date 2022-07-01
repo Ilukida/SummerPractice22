@@ -6,4 +6,8 @@
     <string name="age">Age</string>
     <string name="count">Count</string>
     <string name="result">Result</string>
+    <string name="the_mifflin_geor_formula">The Mifflin-Geor Formula</string>
+    <string name="the_data_is_entered_incorrectly">The data is entered incorrectly.</string>
+    <string name="data_cant_be_null">Data can\'t be null</string>
+    <string name="kcal">kcal</string>
 </resources>
