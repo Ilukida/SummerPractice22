@@ -10,7 +10,7 @@
     <string name="evening">Evening</string>
     <string name="night">Night</string>
     <string name="midnight">Midnight</string>
-    <string name="what_time_is_now">What time is now?</string>
     <string name="right_now">Right now:</string>
     <string name="name_of_the_class">Name of the class</string>
+    <string name="what_name">What name?</string>
 </resources>

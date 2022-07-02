@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="@string/what_time_is_now"
+        android:text="@string/what_name"
         app:layout_constraintTop_toBottomOf="@+id/tv_day"
         tools:layout_editor_absoluteX="16dp" />
 
