@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/morningFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_brightness_low"
+        android:title="@string/morning" />
+    <item
+        android:id="@+id/dayFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_brightness_high"
+        android:title="@string/day" />
+    <item
+        android:id="@+id/eveningFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_brightness_down"
+        android:title="@string/evening" />
+    <item
+        android:id="@+id/nightFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_brightness_night"
+        android:title="@string/night" />
+    <item
+        android:id="@+id/midnightFragment"
+        android:enabled="true"
+        android:icon="@drawable/ic_round_brightness_midnight"
+        android:title="@string/midnight" />
+
+</menu>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/morningFragment">
+
+    <fragment
+        android:id="@+id/morningFragment"
+        android:name="com.example.summerpractice22.MorningFragment"
+        android:label="MorningFragment"
+        tools:layout="@layout/fragment_morning">
+        <action
+            android:id="@+id/action_morningFragment_to_midnightFragment"
+            app:destination="@id/midnightFragment" />
+        <action
+            android:id="@+id/action_morningFragment_to_nightFragment"
+            app:destination="@id/nightFragment" />
+        <action
+            android:id="@+id/action_morningFragment_to_eveningFragment"
+            app:destination="@id/eveningFragment" />
+        <action
+            android:id="@+id/action_morningFragment_to_dayFragment"
+            app:destination="@id/dayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dayFragment"
+        android:name="com.example.summerpractice22.DayFragment"
+        android:label="DayFragment"
+        tools:layout="@layout/fragment_day"/>
+    <fragment
+        android:id="@+id/eveningFragment"
+        android:name="com.example.summerpractice22.EveningFragment"
+        android:label="EveningFragment"
+        tools:layout="@layout/fragment_evening"/>
+    <fragment
+        android:id="@+id/midnightFragment"
+        android:name="com.example.summerpractice22.MidnightFragment"
+        android:label="MidnightFragment"
+        tools:layout="@layout/fragment_midnight"/>
+    <fragment
+        android:id="@+id/nightFragment"
+        android:name="com.example.summerpractice22.NightFragment"
+        android:label="NightFragment"
+        tools:layout="@layout/fragment_night"/>
+</navigation>
