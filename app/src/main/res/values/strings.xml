@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">Summer Practice 22</string>
+    <string name="evening_fragment">Evening Fragment</string>
+    <string name="day_fragment">Day Fragment</string>
+    <string name="midnight_fragment">Midnight Fragment</string>
+    <string name="morning_fragment">Morning Fragment</string>
+    <string name="night_fragment">Night Fragment</string>
+    <string name="morning">Morning</string>
+    <string name="day">Day</string>
+    <string name="evening">Evening</string>
+    <string name="night">Night</string>
+    <string name="midnight">Midnight</string>
+    <string name="right_now">Right now:</string>
+    <string name="name_of_the_class">Name of the class</string>
+    <string name="what_name">What name?</string>
 </resources>

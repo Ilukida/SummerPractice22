@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.summerpractice22.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+
+        <action
+            android:id="@+id/action_mainFragment_to_midnightFragment"
+            app:destination="@id/midnightFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_eveningFragment"
+            app:destination="@id/eveningFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_dayFragment"
+            app:destination="@id/dayFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_nightFragment"
+            app:destination="@id/nightFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_timeFragment"
+            app:destination="@id/timeFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/dayFragment"
+        android:name="com.example.summerpractice22.DayFragment"
+        android:label="DayFragment"
+        tools:layout="@layout/fragment_day">
+        <action
+            android:id="@+id/action_dayFragment_to_timeFragment"
+            app:destination="@id/timeFragment"
+            app:popUpTo="@id/dayFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/eveningFragment"
+        android:name="com.example.summerpractice22.EveningFragment"
+        android:label="EveningFragment"
+        tools:layout="@layout/fragment_evening">
+        <action
+            android:id="@+id/action_eveningFragment_to_timeFragment"
+            app:destination="@id/timeFragment"
+            app:popUpTo="@id/eveningFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/midnightFragment"
+        android:name="com.example.summerpractice22.MidnightFragment"
+        android:label="MidnightFragment"
+        tools:layout="@layout/fragment_midnight">
+        <action
+            android:id="@+id/action_midnightFragment_to_timeFragment"
+            app:destination="@id/timeFragment"
+            app:popUpTo="@id/midnightFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nightFragment"
+        android:name="com.example.summerpractice22.NightFragment"
+        android:label="NightFragment"
+        tools:layout="@layout/fragment_night">
+        <action
+            android:id="@+id/action_nightFragment_to_timeFragment"
+            app:destination="@id/timeFragment"
+            app:popUpTo="@id/nightFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/timeFragment"
+        android:name="com.example.summerpractice22.TimeFragment"
+        android:label="TimeFragment" />
+</navigation>
