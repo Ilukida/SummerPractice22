@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var cities: List<City>
     private lateinit var controller: NavController
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

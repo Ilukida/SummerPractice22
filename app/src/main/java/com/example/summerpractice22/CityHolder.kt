@@ -13,15 +13,15 @@ class CityHolder (
         private val onItemClick: (City) -> Unit,
 ) : RecyclerView.ViewHolder(binding.root) {
 
-        fun onBind(song: City) {
+        fun onBind(city: City) {
                 with(binding) {
-                        tvName.text = song.name
-                        tvYear.text = song.year.toString()
+                        tvName.text = city.name
+                        tvYear.text = city.year.toString()
                         root.setOnClickListener {
-                                onItemClick(song)
+                                onItemClick(city)
                         }
                         glide
-                                .load(song.url)
+                                .load(city.url)
                                 .placeholder(R.drawable.mountain)
                                 .error(R.drawable.mountain)
                                 .into(ivCover)

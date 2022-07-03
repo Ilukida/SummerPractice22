@@ -19,6 +19,7 @@ class AboutFragment : Fragment(R.layout.fragment_about) {
     private var _binding: FragmentAboutBinding? = null
     private val binding get() = _binding!!
 
+    @SuppressLint("SetTextI18n")
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -37,9 +38,9 @@ class AboutFragment : Fragment(R.layout.fragment_about) {
         Glide.with(requireContext())
             .load(cities[position].url)
             .into(binding.aboutImage)
-        binding.aboutName.text = cities[position].name
-        binding.aboutDescription.text = cities[position].description
-        binding.aboutYear.text = cities[position].year.toString()
+        binding.aboutName.text = "Имя: $cities[position].name"
+        binding.aboutDescription.text = "Описание: $cities[position].description"
+        binding.aboutYear.text = "Год основания $cities[position].year.toString()"
 
         return binding.root
     }
