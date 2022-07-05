@@ -38,10 +38,9 @@ class AboutFragment : Fragment(R.layout.fragment_about) {
         Glide.with(requireContext())
             .load(cities[position].url)
             .into(binding.aboutImage)
-        binding.aboutName.text = "Имя: $cities[position].name"
-        binding.aboutDescription.text = "Описание: $cities[position].description"
-        binding.aboutYear.text = "Год основания $cities[position].year.toString()"
-
+        binding.aboutName.text = "Название: ${cities[position].name}"
+        binding.aboutDescription.text = "Описание: ${cities[position].description}"
+        binding.aboutYear.text = "Год основания ${cities[position].year.toString()}"
         return binding.root
     }
 

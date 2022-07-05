@@ -1,10 +1,7 @@
 package com.example.summerpractice22
 
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
 import com.bumptech.glide.RequestManager
-import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.bumptech.glide.request.RequestOptions
 import com.example.summerpractice22.databinding.ItemCityBinding
 
 class CityHolder (

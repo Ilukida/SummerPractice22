@@ -1,7 +1,5 @@
 package com.example.summerpractice22
 
-import java.net.URL
-
 data class City(
     val id: Int,
     val name: String,

@@ -2,8 +2,6 @@ package com.example.summerpractice22
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.os.bundleOf
-import androidx.navigation.NavController
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.RequestManager
 import com.example.summerpractice22.databinding.ItemCityBinding
